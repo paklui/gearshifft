@@ -85,7 +85,7 @@ FFTW_VER=3.3.8
 BOOST_ROOT=${HOME}/sw/boost-${BOOST_VER}
 FFTW_ROOT=${HOME}/sw/fftw-${FFTW_VER}/
 
-export CMAKE_PREFIX_PATH==${BOOST_ROOT}/lib:${BOOST_ROOT}/include:${FFTW_ROOT}:${CMAKE_PREFIX_PATH}
+export CMAKE_PREFIX_PATH=${BOOST_ROOT}/lib:${BOOST_ROOT}/include:${FFTW_ROOT}:${CMAKE_PREFIX_PATH}
 if [ -d "CMakeFiles" ]; then
   make clean
   rm -rf CMakeFiles CMakeCache.txt cmake_install.cmake Makefile
